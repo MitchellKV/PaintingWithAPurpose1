@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.gallery-container > h1 {
+    font-size: 3vw;
+}
+
+.row-1, .row-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.row-1 > img {
+    height: 293px;
+    width: auto;
+}
+
+.row-2 > img {
+    height: 293px;
+    width: auto;
+}
+
+
+@media (max-width: 768px) {
+    .row-1, .row-2 {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .gallery-container > div > img {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+}
